@@ -373,6 +373,18 @@ input:focus, textarea:focus{
   justify-self:end;
   text-align:right;
 }
+@media (max-width:640px){
+  .footer__inner{
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+
+  .footer__links,
+  .footer__copy{
+    justify-self:start;
+    text-align:left;
+  }
+}
 
 
 
