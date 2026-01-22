@@ -356,5 +356,24 @@ input:focus, textarea:focus{
   .footer__inner{flex-direction:column; align-items:flex-start}
 }
 
+/* ===== Footer Alignment Fix ===== */
+.footer__inner{
+  display:grid;
+  grid-template-columns: 1fr auto auto;
+  align-items:center;
+}
+
+.footer__links{
+  display:flex;
+  gap:16px;
+  justify-self:end;   /* 🔥 DAS ist der Key */
+}
+
+.footer__copy{
+  justify-self:end;
+  text-align:right;
+}
+
+
 
 
