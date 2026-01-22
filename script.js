@@ -69,3 +69,24 @@
     });
   }
 })();
+
+// Before/After slider (DSGVO-neutral)
+(() => {
+  const root = document.querySelector("[data-ba]");
+  if (!root) return;
+
+  const range = root.querySelector("[data-barange]");
+  const afterImg = root.querySelector(".ba__after");
+  const handle = root.querySelector("[data-bahandle]");
+
+  const apply = (val) => {
+    const p = Math.max(0, Math.min(100, Number(val)));
+    // show "after" on the left portion: clip right side based on slider
+    afterImg.style.clipPath = `inset(0 ${100 - p}% 0 0)`;
+    handle.style.left = `${p}%`;
+  };
+
+  apply(range.value);
+  range.addEventListener("input", (e) => apply(e.target.value));
+})();
+
