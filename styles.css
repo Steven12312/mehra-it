@@ -388,4 +388,69 @@ input:focus, textarea:focus{
   .hero__trust{grid-template-columns:1fr}
 }
 ```
+/* ===== FIX: kein horizontaler Scrollbalken ===== */
+html, body { overflow-x: hidden; }
+
+/* ===== FIX: Hero-Rechtsbereich sauber “clipped” (kein Überstand) ===== */
+.hero__art { overflow: hidden; }
+
+/* ===== FIX: Hintergrund-Kreis subtiler + kein Überstand ===== */
+.hero__art::before{
+  right:-90px;
+  top:-70px;
+  width:420px;
+  height:420px;
+  background: rgba(31,42,55,.06);
+}
+
+/* ===== FIX: Blob etwas schwächer (sonst wirkt’s wie Fleck) ===== */
+.blob{
+  color: rgba(176,137,104,.25);
+  opacity: .9;
+  filter: blur(2px);
+}
+
+/* ===== FIX: Cards wieder “premium” (nicht wie weiße Kästen) ===== */
+.card,
+.trustitem,
+.svc,
+.panel,
+.form,
+.callout{
+  background: rgba(255,255,255,.58);
+  border: 1px solid rgba(31,42,55,.10);
+  box-shadow: 0 18px 55px rgba(31,42,55,.14);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+/* ===== FIX: Chips nicht zu hell ===== */
+.chip{
+  background: rgba(255,255,255,.62);
+  border: 1px solid rgba(31,42,55,.10);
+}
+
+/* ===== FIX: Badge/Buttons wieder klar sichtbar ===== */
+.badge{
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(31,42,55,.10);
+}
+
+.btn{
+  background: rgba(255,255,255,.70);
+  border: 1px solid rgba(31,42,55,.12);
+  box-shadow: 0 10px 26px rgba(31,42,55,.10);
+}
+
+.btn--ghost{
+  background: rgba(255,255,255,.45);
+  box-shadow: none;
+}
+
+/* ===== FIX: Header wirkt weniger “ausgewaschen” ===== */
+.header{
+  background: rgba(251,246,238,.82);
+  border-bottom: 1px solid rgba(31,42,55,.10);
+}
+
 
