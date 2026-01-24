@@ -25,6 +25,7 @@
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="stylesheet" href="./styles.css" />
+  <script src="./script.js" defer></script>
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -38,8 +39,6 @@
     "foundingDate":"2020"
   }
   </script>
-
-  <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -69,6 +68,7 @@
       </button>
 
       <nav class="nav" data-nav>
+        <a href="#geschaeftsfuehrer">Geschäftsführer</a>
         <a href="#ueber-uns">Über uns</a>
         <a href="#dienstleistungen">Dienstleistungen</a>
         <a href="#referenzen">Kunden & Projekterfahrung</a>
@@ -89,8 +89,8 @@
           <h1>IT, die einfach läuft – Support, Betrieb & Projekte aus einer Hand.</h1>
 
           <p class="lead">
-            Ich bin <strong>Arpet Mehra</strong> und unterstütze Unternehmen seit 2020 im Unternehmens- und Konzernumfeld –
-            <strong>schnell erreichbar</strong>, <strong>klar im Vorgehen</strong> und <strong>zuverlässig in der Umsetzung</strong>.
+            Support, Betrieb und Projekte – <strong>klar strukturiert</strong>, <strong>transparent</strong> und
+            <strong>praxisnah</strong>. Damit deine IT im Alltag stabil bleibt und Themen sauber abgeschlossen werden.
           </p>
 
           <div class="hero__actions">
@@ -117,6 +117,7 @@
         <div class="hero__side" aria-hidden="true">
           <div class="shape"></div>
 
+          <!-- Hero Bild -->
           <figure class="hero__media">
             <img src="assets/hero-it.png" alt="" loading="lazy">
           </figure>
@@ -144,6 +145,55 @@
       </div>
     </section>
 
+    <!-- GESCHÄFTSFÜHRER -->
+    <section id="geschaeftsfuehrer" class="section section--alt">
+      <div class="container section__grid">
+        <div class="card">
+          <h2>Geschäftsführer</h2>
+          <p class="muted">
+            Ein fester Ansprechpartner, der Themen nicht nur „anfasst“, sondern wirklich zu Ende bringt.
+          </p>
+
+          <div class="ceo">
+            <div class="ceo__img">
+              <img src="assets/arpet.png" alt="Arpet Mehra (Sketch)" loading="lazy">
+            </div>
+
+            <div class="ceo__text">
+              <h3>Arpet Mehra</h3>
+              <p>
+                Ich unterstütze Unternehmen dabei, den IT-Alltag ruhiger zu machen:
+                Tickets sauber bearbeiten, Betrieb stabil halten und Projekte so steuern,
+                dass am Ende alles nachvollziehbar funktioniert.
+              </p>
+              <ul class="bullets">
+                <li><strong>Klar & erreichbar:</strong> kurze Wege, schnelle Rückmeldung</li>
+                <li><strong>Strukturiert:</strong> saubere Abläufe, transparente Status</li>
+                <li><strong>Pragmatisch:</strong> Lösungen, die im Alltag wirklich helfen</li>
+              </ul>
+
+              <div class="actions">
+                <a class="btn btn--primary" href="#kontakt">Kontakt aufnehmen</a>
+                <a class="btn btn--secondary" href="#dienstleistungen">Leistungen ansehen</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2>Wofür Mehra IT steht</h2>
+          <p>
+            Keine komplizierten Buzzwords – sondern <strong>verlässliche IT</strong>, die im Alltag funktioniert.
+            Wenn du willst, dass Themen sauber dokumentiert werden und nicht ständig wieder aufpoppen,
+            bist du hier richtig.
+          </p>
+          <p class="muted small">
+            Hinweis: Projektdetails je nach Vertraulichkeit auf Anfrage.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- ÜBER UNS -->
     <section id="ueber-uns" class="section">
       <div class="container section__grid">
@@ -160,7 +210,7 @@
           </p>
 
           <figure class="section__media">
-            <img src="assets/team-it.jpg" alt="IT-Arbeit mit Struktur: Planung, Tickets und Dokumentation" loading="lazy">
+            <img src="assets/team-it.png" alt="IT-Arbeit mit Struktur: Planung, Tickets und Dokumentation" loading="lazy">
           </figure>
         </div>
 
@@ -246,97 +296,6 @@
           <h3>Typische Ergebnisse</h3>
           <ul class="bullets">
             <li>kürzere Ticket-Durchlaufzeiten durch klare Priorisierung</li>
-            <li>weniger Wiederholungsfehler durch Ursachenanalyse</li>
-            <li>stabilerer Betrieb durch dokumentierte Standards</li>
-          </ul>
-        </div>
-      </div>
-    </section>
 
-    <!-- KONTAKT -->
-    <section id="kontakt" class="section section--alt">
-      <div class="container">
-        <div class="section__head">
-          <h2>Kontakt</h2>
-          <p class="muted">Kurze Nachricht reicht – wir melden uns zeitnah.</p>
-        </div>
-
-        <div class="contact">
-          <form class="form" data-form>
-            <div class="row">
-              <div class="field">
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text" autocomplete="name" required />
-              </div>
-              <div class="field">
-                <label for="email">E-Mail</label>
-                <input id="email" name="email" type="email" autocomplete="email" required />
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="subject">Betreff</label>
-              <input id="subject" name="subject" type="text" required />
-            </div>
-
-            <div class="field">
-              <label for="message">Nachricht</label>
-              <textarea id="message" name="message" rows="6" required></textarea>
-            </div>
-
-            <label class="consent">
-              <input type="checkbox" id="privacy" required />
-              Ich habe die <a href="./datenschutz.html">Datenschutzerklärung</a> gelesen und bin einverstanden.
-            </label>
-
-            <p class="fineprint">
-              Hinweis: Beim Absenden wird dein Mailprogramm geöffnet (mailto). Es werden keine Daten auf dieser Website gespeichert.
-            </p>
-
-            <div class="actions">
-              <button class="btn btn--primary" type="submit">Nachricht senden</button>
-              <a class="btn btn--secondary" href="#top">Nach oben</a>
-            </div>
-
-            <p class="hint" data-formhint aria-live="polite"></p>
-          </form>
-
-          <aside class="aside">
-            <div class="card">
-              <h3>Direktkontakt</h3>
-              <p class="muted">Für eine schnelle Einschätzung sind diese Infos hilfreich:</p>
-              <ul class="bullets">
-                <li>Unternehmen / Branche</li>
-                <li>Thema (Support / Betrieb / Projekt)</li>
-                <li>Zeitraum & Umfang</li>
-              </ul>
-              <div class="divider"></div>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <strong>Mehra IT-Consulting</strong>
-        <div class="muted small">Zuverlässige IT-Services für Unternehmen</div>
-      </div>
-
-      <div class="footer__links">
-        <a href="./impressum.html">Impressum</a>
-        <a href="./datenschutz.html">Datenschutz</a>
-      </div>
-
-      <div class="footer__copy">
-        © <span id="year"></span>
-      </div>
-    </div>
-  </footer>
-
-</body>
-</html>
 
 
