@@ -1,4 +1,11 @@
 (() => {
+  // Dev banner close
+  const dev = document.querySelector("[data-devbanner]");
+  const devClose = document.querySelector("[data-devclose]");
+  if (dev && devClose) {
+    devClose.addEventListener("click", () => dev.remove());
+  }
+
   // year
   const year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
@@ -70,23 +77,4 @@
   }
 })();
 
-// Before/After slider (DSGVO-neutral)
-(() => {
-  const root = document.querySelector("[data-ba]");
-  if (!root) return;
-
-  const range = root.querySelector("[data-barange]");
-  const afterImg = root.querySelector(".ba__after");
-  const handle = root.querySelector("[data-bahandle]");
-
-  const apply = (val) => {
-    const p = Math.max(0, Math.min(100, Number(val)));
-    // show "after" on the left portion: clip right side based on slider
-    afterImg.style.clipPath = `inset(0 ${100 - p}% 0 0)`;
-    handle.style.left = `${p}%`;
-  };
-
-  apply(range.value);
-  range.addEventListener("input", (e) => apply(e.target.value));
-})();
 
