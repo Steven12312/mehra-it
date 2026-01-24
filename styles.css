@@ -194,7 +194,7 @@ h1{
   background: rgba(31,42,55,.06);
 }
 
-/* NEW: hero image */
+/* hero image */
 .hero__media{
   position:relative;
   margin:0 0 14px;
@@ -267,7 +267,7 @@ p{margin:0 0 12px}
 .bullets{margin:0; padding-left:18px}
 .bullets li{margin:8px 0}
 
-/* NEW: section media (Über uns Bild) */
+/* section media */
 .section__media{
   margin:14px 0 0;
   border-radius: var(--r);
@@ -299,7 +299,7 @@ p{margin:0 0 12px}
 }
 .service p{color:var(--muted)}
 
-/* NEW: service icons */
+/* service icons */
 .service__icon{
   width:34px;
   height:34px;
@@ -450,9 +450,6 @@ input:focus, textarea:focus{
     text-align:left;
   }
 }
-
-
-
 
 
 
