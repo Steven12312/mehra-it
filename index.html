@@ -1,150 +1,342 @@
-<!-- HERO -->
-<section id="top" class="hero">
-  <div class="container hero__grid">
-    <div class="hero__copy">
-      <p class="pill">IT-Services für Unternehmen</p>
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#f6eddc" />
 
-      <h1>IT, die einfach läuft – Support, Betrieb & Projekte aus einer Hand.</h1>
+  <title>Mehra IT-Consulting | IT-Support, Betrieb & Projekte</title>
+  <meta name="description" content="Mehra IT-Consulting unterstützt Unternehmen mit 1st/2nd Level Support, IT-Betrieb, Projektmanagement und IT-Beratung – zuverlässig, strukturiert, praxisnah." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://mehra-it.de/" />
 
-      <p class="lead">
-        Ich bin <strong>Arpet Mehra</strong> und unterstütze Unternehmen seit 2020 im Unternehmens- und Konzernumfeld –
-        <strong>schnell erreichbar</strong>, <strong>klar im Vorgehen</strong> und <strong>zuverlässig in der Umsetzung</strong>.
-      </p>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mehra IT-Consulting | IT-Support, Betrieb & Projekte" />
+  <meta property="og:description" content="Support, Betrieb, Projekte & Beratung – strukturiert, transparent, praxisnah." />
+  <meta property="og:url" content="https://mehra-it.de/" />
+  <meta property="og:image" content="assets/og-cover.png" />
 
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="#kontakt">Kostenloses Erstgespräch</a>
-        <a class="btn btn--secondary" href="#dienstleistungen">Leistungen ansehen</a>
-      </div>
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mehra IT-Consulting" />
+  <meta name="twitter:description" content="IT-Support, IT-Betrieb, Projektmanagement & Beratung." />
+  <meta name="twitter:image" content="assets/og-cover.png" />
 
-      <div class="kpis">
-        <div class="kpi">
-          <div class="kpi__title">1st/2nd Level</div>
-          <div class="kpi__text">Support & Ticketbearbeitung</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi__title">Betrieb</div>
-          <div class="kpi__text">stabil, dokumentiert, nachvollziehbar</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi__title">Projekte</div>
-          <div class="kpi__text">Planung bis Go-Live</div>
-        </div>
-      </div>
-    </div>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="./styles.css" />
 
-    <div class="hero__side" aria-hidden="true">
-      <div class="shape"></div>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"Mehra IT-Consulting",
+    "url":"https://mehra-it.de/",
+    "description":"IT-Support, IT-Betrieb, Projektmanagement und IT-Beratung für Unternehmen.",
+    "areaServed":"DE",
+    "foundingDate":"2020"
+  }
+  </script>
 
-      <!-- NEU: passendes Bild im Hero -->
-      <figure class="hero__media">
-        <img src="assets/hero-it.jpg" alt="" loading="lazy">
-      </figure>
+  <script src="./script.js" defer></script>
+</head>
 
-      <div class="box">
-        <div class="box__title">So arbeite ich</div>
-        <ul class="list">
-          <li>klare Zuständigkeiten & saubere Kommunikation</li>
-          <li>strukturierte Abläufe statt „Feuerwehrmodus“</li>
-          <li>Lösungen, die langfristig funktionieren</li>
-        </ul>
-      </div>
-
-      <div class="box box--chips">
-        <div class="box__title">Typische Einsätze</div>
-        <div class="chips">
-          <span class="chip">Rollouts</span>
-          <span class="chip">User Support</span>
-          <span class="chip">Betriebsübergaben</span>
-          <span class="chip">Incident/Problem Mgmt</span>
-          <span class="chip">Doku & Übergabe</span>
-        </div>
-      </div>
-    </div>
+<body>
+  <div class="dev-banner" data-devbanner>
+    <span>🚧 Diese Website befindet sich aktuell in der Entwicklung.</span>
+    <button type="button" aria-label="Banner schließen" data-devclose>✕</button>
   </div>
-</section>
 
-<!-- ÜBER UNS -->
-<section id="ueber-uns" class="section">
-  <div class="container section__grid">
-    <div>
-      <h2>Über uns</h2>
-      <p>
-        Unser Ziel ist einfach: <strong>deine IT soll ruhig laufen</strong>.
-        Wir entlasten interne Teams, stabilisieren den Betrieb und begleiten Projekte so,
-        dass am Ende nicht nur „irgendwas live“ geht – sondern es wirklich funktioniert.
-      </p>
-      <p>
-        Erfahrung aus unterschiedlichen Rollen im internationalen Umfeld –
-        u. a. in Projektnähe zu <strong>Lufthansa</strong> und <strong>Stellantis</strong>.
-      </p>
+  <a class="skip" href="#content">Zum Inhalt springen</a>
 
-      <!-- NEU: Bild passend zu "Über uns" -->
-      <figure class="section__media">
-        <img src="assets/team-it.jpg" alt="IT-Arbeit mit Struktur: Planung, Tickets und Dokumentation" loading="lazy">
-      </figure>
+  <header class="header" data-header>
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Mehra IT-Consulting">
+        <span class="brand__mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 2.5C7.65 2.5 2.5 7.65 2.5 14C2.5 20.35 7.65 25.5 14 25.5C20.35 25.5 25.5 20.35 25.5 14C25.5 7.65 20.35 2.5 14 2.5Z" stroke="currentColor" stroke-width="2"/>
+            <path d="M8 15.5L11.2 18.7L20 9.9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>Mehra</strong><span> IT-Consulting</span>
+        </span>
+      </a>
+
+      <button class="navbtn" type="button" aria-label="Menü öffnen" aria-expanded="false" data-navbtn>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" data-nav>
+        <a href="#ueber-uns">Über uns</a>
+        <a href="#dienstleistungen">Dienstleistungen</a>
+        <a href="#referenzen">Kunden & Projekterfahrung</a>
+        <a href="#kontakt">Kontakt</a>
+        <a class="nav__cta" href="#kontakt">Anfrage senden</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="card">
-      <h3>Was du von uns erwarten kannst</h3>
-      <ul class="bullets">
-        <li><strong>Transparenz:</strong> Du weißt jederzeit, wo wir stehen – inkl. nächster Schritte und Risiken.</li>
-        <li><strong>Ownership:</strong> Ein fester Ansprechpartner, der Themen wirklich zu Ende bringt.</li>
-        <li><strong>Praxis:</strong> Lösungen, die im Alltag helfen – nicht nur in PowerPoints gut aussehen.</li>
-      </ul>
-    </div>
+  <main id="content">
 
-    <!-- ENTFERNT: Before/After Slider (ba) war hier -->
-  </div>
-</section>
+    <!-- HERO -->
+    <section id="top" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="pill">IT-Services für Unternehmen</p>
 
-<!-- DIENSTLEISTUNGEN -->
-<section id="dienstleistungen" class="section section--alt">
-  <div class="container">
-    <div class="section__head">
-      <h2>Dienstleistungen</h2>
-      <p class="muted">Modular buchbar – du bekommst genau das, was du wirklich brauchst.</p>
-    </div>
+          <h1>IT, die einfach läuft – Support, Betrieb & Projekte aus einer Hand.</h1>
 
-    <div class="grid">
-      <article class="service">
-        <img class="service__icon" src="assets/icon-support.svg" alt="" aria-hidden="true" loading="lazy">
-        <h3>1st & 2nd Level IT-Support</h3>
-        <p>Wir kümmern uns um Tickets von A bis Z – verständlich, sauber dokumentiert und mit klaren Rückmeldungen.</p>
-      </article>
+          <p class="lead">
+            Ich bin <strong>Arpet Mehra</strong> und unterstütze Unternehmen seit 2020 im Unternehmens- und Konzernumfeld –
+            <strong>schnell erreichbar</strong>, <strong>klar im Vorgehen</strong> und <strong>zuverlässig in der Umsetzung</strong>.
+          </p>
 
-      <article class="service">
-        <img class="service__icon" src="assets/icon-ops.svg" alt="" aria-hidden="true" loading="lazy">
-        <h3>IT-Betrieb & Wartung</h3>
-        <p>Stabiler Betrieb durch klare Priorisierung, Standards und verlässliche Bearbeitung im Tagesgeschäft.</p>
-      </article>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#kontakt">Kostenloses Erstgespräch</a>
+            <a class="btn btn--secondary" href="#dienstleistungen">Leistungen ansehen</a>
+          </div>
 
-      <article class="service">
-        <img class="service__icon" src="assets/icon-project.svg" alt="" aria-hidden="true" loading="lazy">
-        <h3>IT-Projektmanagement</h3>
-        <p>Von Planung bis Go-Live: realistische Timelines, saubere Abstimmung und Ergebnisse, die messbar sind.</p>
-      </article>
+          <div class="kpis">
+            <div class="kpi">
+              <div class="kpi__title">1st/2nd Level</div>
+              <div class="kpi__text">Support & Ticketbearbeitung</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi__title">Betrieb</div>
+              <div class="kpi__text">stabil, dokumentiert, nachvollziehbar</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi__title">Projekte</div>
+              <div class="kpi__text">Planung bis Go-Live</div>
+            </div>
+          </div>
+        </div>
 
-      <article class="service">
-        <img class="service__icon" src="assets/icon-optimize.svg" alt="" aria-hidden="true" loading="lazy">
-        <h3>Optimierung im Betrieb</h3>
-        <p>Wir reduzieren Störungen, finden Ursachen und verbessern Prozesse – damit es dauerhaft ruhiger wird.</p>
-      </article>
+        <div class="hero__side" aria-hidden="true">
+          <div class="shape"></div>
 
-      <article class="service">
-        <img class="service__icon" src="assets/icon-strategy.svg" alt="" aria-hidden="true" loading="lazy">
-        <h3>Beratung & Strategie</h3>
-        <p>Wir sortieren Optionen, bauen Roadmaps und helfen dir, Entscheidungen sicher und pragmatisch zu treffen.</p>
-      </article>
-    </div>
+          <figure class="hero__media">
+            <img src="assets/hero-it.jpg" alt="" loading="lazy">
+          </figure>
 
-    <div class="cta">
-      <div>
-        <h3>Bereit für eine IT, die zuverlässig läuft?</h3>
-        <p class="muted">Kurzes Erstgespräch – wir klären Bedarf, Umfang und die nächsten Schritte.</p>
+          <div class="box">
+            <div class="box__title">So arbeite ich</div>
+            <ul class="list">
+              <li>klare Zuständigkeiten & saubere Kommunikation</li>
+              <li>strukturierte Abläufe statt „Feuerwehrmodus“</li>
+              <li>Lösungen, die langfristig funktionieren</li>
+            </ul>
+          </div>
+
+          <div class="box box--chips">
+            <div class="box__title">Typische Einsätze</div>
+            <div class="chips">
+              <span class="chip">Rollouts</span>
+              <span class="chip">User Support</span>
+              <span class="chip">Betriebsübergaben</span>
+              <span class="chip">Incident/Problem Mgmt</span>
+              <span class="chip">Doku & Übergabe</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <a class="btn btn--primary" href="#kontakt">Anfrage senden</a>
+    </section>
+
+    <!-- ÜBER UNS -->
+    <section id="ueber-uns" class="section">
+      <div class="container section__grid">
+        <div>
+          <h2>Über uns</h2>
+          <p>
+            Unser Ziel ist einfach: <strong>deine IT soll ruhig laufen</strong>.
+            Wir entlasten interne Teams, stabilisieren den Betrieb und begleiten Projekte so,
+            dass am Ende nicht nur „irgendwas live“ geht – sondern es wirklich funktioniert.
+          </p>
+          <p>
+            Erfahrung aus unterschiedlichen Rollen im internationalen Umfeld –
+            u. a. in Projektnähe zu <strong>Lufthansa</strong> und <strong>Stellantis</strong>.
+          </p>
+
+          <figure class="section__media">
+            <img src="assets/team-it.jpg" alt="IT-Arbeit mit Struktur: Planung, Tickets und Dokumentation" loading="lazy">
+          </figure>
+        </div>
+
+        <div class="card">
+          <h3>Was du von uns erwarten kannst</h3>
+          <ul class="bullets">
+            <li><strong>Transparenz:</strong> Du weißt jederzeit, wo wir stehen – inkl. nächster Schritte und Risiken.</li>
+            <li><strong>Ownership:</strong> Ein fester Ansprechpartner, der Themen wirklich zu Ende bringt.</li>
+            <li><strong>Praxis:</strong> Lösungen, die im Alltag helfen – nicht nur in PowerPoints gut aussehen.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIENSTLEISTUNGEN -->
+    <section id="dienstleistungen" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Dienstleistungen</h2>
+          <p class="muted">Modular buchbar – du bekommst genau das, was du wirklich brauchst.</p>
+        </div>
+
+        <div class="grid">
+          <article class="service">
+            <img class="service__icon" src="assets/icon-support.svg" alt="" aria-hidden="true" loading="lazy">
+            <h3>1st & 2nd Level IT-Support</h3>
+            <p>Wir kümmern uns um Tickets von A bis Z – verständlich, sauber dokumentiert und mit klaren Rückmeldungen.</p>
+          </article>
+
+          <article class="service">
+            <img class="service__icon" src="assets/icon-ops.svg" alt="" aria-hidden="true" loading="lazy">
+            <h3>IT-Betrieb & Wartung</h3>
+            <p>Stabiler Betrieb durch klare Priorisierung, Standards und verlässliche Bearbeitung im Tagesgeschäft.</p>
+          </article>
+
+          <article class="service">
+            <img class="service__icon" src="assets/icon-project.svg" alt="" aria-hidden="true" loading="lazy">
+            <h3>IT-Projektmanagement</h3>
+            <p>Von Planung bis Go-Live: realistische Timelines, saubere Abstimmung und Ergebnisse, die messbar sind.</p>
+          </article>
+
+          <article class="service">
+            <img class="service__icon" src="assets/icon-optimize.svg" alt="" aria-hidden="true" loading="lazy">
+            <h3>Optimierung im Betrieb</h3>
+            <p>Wir reduzieren Störungen, finden Ursachen und verbessern Prozesse – damit es dauerhaft ruhiger wird.</p>
+          </article>
+
+          <article class="service">
+            <img class="service__icon" src="assets/icon-strategy.svg" alt="" aria-hidden="true" loading="lazy">
+            <h3>Beratung & Strategie</h3>
+            <p>Wir sortieren Optionen, bauen Roadmaps und helfen dir, Entscheidungen sicher und pragmatisch zu treffen.</p>
+          </article>
+        </div>
+
+        <div class="cta">
+          <div>
+            <h3>Bereit für eine IT, die zuverlässig läuft?</h3>
+            <p class="muted">Kurzes Erstgespräch – wir klären Bedarf, Umfang und die nächsten Schritte.</p>
+          </div>
+          <a class="btn btn--primary" href="#kontakt">Anfrage senden</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFERENZEN -->
+    <section id="referenzen" class="section">
+      <div class="container section__grid">
+        <div>
+          <h2>Kunden & Projekterfahrung</h2>
+          <p>
+            Erfahrung aus verschiedenen IT-Rollen im Enterprise-Umfeld. Projektdetails gerne auf Anfrage
+            (je nach Vertraulichkeit).
+          </p>
+          <ul class="companies">
+            <li>Leasys Zweigstelle S.p.A. Deutschland</li>
+            <li>Deutsche Lufthansa AG</li>
+            <li>Stellantis Germany GmbH</li>
+            <li>Weitere Einsätze im Enterprise-Umfeld</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Typische Ergebnisse</h3>
+          <ul class="bullets">
+            <li>kürzere Ticket-Durchlaufzeiten durch klare Priorisierung</li>
+            <li>weniger Wiederholungsfehler durch Ursachenanalyse</li>
+            <li>stabilerer Betrieb durch dokumentierte Standards</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Kontakt</h2>
+          <p class="muted">Kurze Nachricht reicht – wir melden uns zeitnah.</p>
+        </div>
+
+        <div class="contact">
+          <form class="form" data-form>
+            <div class="row">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="email">E-Mail</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="subject">Betreff</label>
+              <input id="subject" name="subject" type="text" required />
+            </div>
+
+            <div class="field">
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <label class="consent">
+              <input type="checkbox" id="privacy" required />
+              Ich habe die <a href="./datenschutz.html">Datenschutzerklärung</a> gelesen und bin einverstanden.
+            </label>
+
+            <p class="fineprint">
+              Hinweis: Beim Absenden wird dein Mailprogramm geöffnet (mailto). Es werden keine Daten auf dieser Website gespeichert.
+            </p>
+
+            <div class="actions">
+              <button class="btn btn--primary" type="submit">Nachricht senden</button>
+              <a class="btn btn--secondary" href="#top">Nach oben</a>
+            </div>
+
+            <p class="hint" data-formhint aria-live="polite"></p>
+          </form>
+
+          <aside class="aside">
+            <div class="card">
+              <h3>Direktkontakt</h3>
+              <p class="muted">Für eine schnelle Einschätzung sind diese Infos hilfreich:</p>
+              <ul class="bullets">
+                <li>Unternehmen / Branche</li>
+                <li>Thema (Support / Betrieb / Projekt)</li>
+                <li>Zeitraum & Umfang</li>
+              </ul>
+              <div class="divider"></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <strong>Mehra IT-Consulting</strong>
+        <div class="muted small">Zuverlässige IT-Services für Unternehmen</div>
+      </div>
+
+      <div class="footer__links">
+        <a href="./impressum.html">Impressum</a>
+        <a href="./datenschutz.html">Datenschutz</a>
+      </div>
+
+      <div class="footer__copy">
+        © <span id="year"></span>
+      </div>
     </div>
-  </div>
-</section>
+  </footer>
+
+</body>
+</html>
 
 
