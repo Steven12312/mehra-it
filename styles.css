@@ -204,10 +204,15 @@ h1{
   background: rgba(255,255,255,.75);
   box-shadow: var(--shadow);
 }
+.hero__media{
+  max-width: 320px;        /* 🔥 kontrollierte Breite */
+  margin: 0 auto 16px;     /* zentriert */
+}
+
 .hero__media img{
   width:100%;
-  height:180px;
-  object-fit:cover;
+  height: 320px;           /* 🔥 feste Höhe */
+  object-fit: contain;     /* KEIN Abschneiden */
   display:block;
 }
 
