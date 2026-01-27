@@ -243,7 +243,7 @@ a{color:inherit; text-decoration:none}
   filter:grayscale(1) contrast(1.05);
   display:block;
 }
-.portraitimg{
+.portrait img{
   width:100%;
   height:340px;
   object-fit:cover;
