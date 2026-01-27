@@ -1,110 +1,143 @@
-<!-- HERO (Start) -->
-<section id="top" class="hero hero--video">
-  <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="assets/hero-bg.jpg">
-    <source src="assets/hero-bg.mp4" type="video/mp4">
-  </video>
-  <div class="hero__overlay" aria-hidden="true"></div>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Topbar wie Haven (Brand links, CTA rechts) -->
-  <div class="hero__topbar">
-    <a class="hero__brand" href="#top">Mehra IT-Consulting</a>
-    <a class="hero__topcta" href="#kontakt">Anfrage senden</a>
-  </div>
+  <title>Mehra IT-Consulting</title>
+  <meta name="description" content="IT-Support, IT-Betrieb & Projektmanagement – zuverlässig, strukturiert und praxisnah.">
 
-  <div class="container hero__content">
-    <p class="hero__kicker">IT-Services für Unternehmen</p>
-    <h1>IT, die im Alltag einfach funktioniert.</h1>
-    <p class="hero__lead">
-      Support, Betrieb & Projekte – strukturiert, schnell erreichbar und zuverlässig umgesetzt.
-    </p>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
 
-    <div class="hero__actions">
-      <a class="btn btn--primary" href="#kontakt">Anfrage senden</a>
-      <a class="btn btn--ghost" href="#dienstleistungen">Leistungen ansehen</a>
+  <!-- Favicon optional -->
+  <!-- <link rel="icon" href="assets/favicon.svg"> -->
+</head>
+
+<body>
+
+  <!-- ================= HERO ================= -->
+  <section id="top" class="hero hero--video">
+    <video class="hero__video" autoplay muted loop playsinline preload="metadata">
+      <source src="assets/hero-bg.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero__overlay"></div>
+
+    <!-- Topbar -->
+    <div class="hero__topbar">
+      <a href="#top" class="hero__brand">Mehra IT-Consulting</a>
+      <a href="#kontakt" class="hero__topcta">Anfrage senden</a>
     </div>
 
-    <div class="hero__meta">
-      <span>1st/2nd Level Support</span>
-      <span>IT-Betrieb</span>
-      <span>Projektmanagement</span>
+    <!-- Hero Content -->
+    <div class="container hero__content">
+      <p class="hero__kicker">IT-Services für Unternehmen</p>
+
+      <h1>IT, die im Alltag einfach funktioniert.</h1>
+
+      <p class="hero__lead">
+        Support, Betrieb & Projekte – strukturiert, zuverlässig und klar kommuniziert.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#kontakt" class="btn btn--primary">Anfrage senden</a>
+        <a href="#dienstleistungen" class="btn btn--ghost">Leistungen ansehen</a>
+      </div>
+
+      <div class="hero__meta">
+        <span>1st / 2nd Level Support</span>
+        <span>IT-Betrieb</span>
+        <span>Projektmanagement</span>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Teaser (kurz, wie “Erfahren Sie mehr…”) -->
-<section class="teaser">
-  <div class="container teaser__inner">
-    <p class="teaser__mini">Erfahren Sie mehr über uns</p>
-    <h2>Ihr IT-Partner für Support, Betrieb und Projekte.</h2>
-  </div>
-</section>
+  <!-- ================= TEASER ================= -->
+  <section class="teaser">
+    <div class="container teaser__inner">
+      <p class="teaser__mini">Erfahren Sie mehr über uns</p>
+      <h2>Ihr IT-Partner für Support, Betrieb & Projekte.</h2>
+    </div>
+  </section>
 
-<!-- Blocks (Haven-Style: große Bildfläche + Text, abwechselnd) -->
-<section id="dienstleistungen" class="blocks">
-  <div class="container">
+  <!-- ================= DIENSTLEISTUNGEN ================= -->
+  <section id="dienstleistungen" class="blocks">
+    <div class="container">
 
-    <article class="block">
-      <div class="block__text">
-        <h3>Stabiler Betrieb</h3>
-        <p>Standards, Dokumentation und klare Verantwortlichkeiten – damit es dauerhaft ruhig läuft.</p>
-        <ul class="block__list">
-          <li>Übergaben & Doku</li>
-          <li>Routine-Checks</li>
-          <li>Transparente Status-Updates</li>
-        </ul>
-      </div>
-      <div class="block__media">
-        <img src="assets/it-ops.jpg" alt="IT-Betrieb und Dokumentation" loading="lazy">
-      </div>
-    </article>
+      <article class="block">
+        <div class="block__text">
+          <h3>Stabiler IT-Betrieb</h3>
+          <p>
+            Klare Prozesse, saubere Dokumentation und feste Zuständigkeiten
+            sorgen für einen ruhigen, zuverlässigen Betrieb.
+          </p>
+          <ul class="block__list">
+            <li>Übergaben & Dokumentation</li>
+            <li>Routine-Checks</li>
+            <li>Transparente Statusmeldungen</li>
+          </ul>
+        </div>
+        <div class="block__media">
+          <img src="assets/it-ops.jpg" alt="IT-Betrieb und Dokumentation">
+        </div>
+      </article>
 
-    <article class="block block--reverse">
-      <div class="block__text">
-        <h3>Erreichbarer Support</h3>
-        <p>Tickets werden nicht verschoben – wir analysieren, lösen und dokumentieren sauber.</p>
-        <ul class="block__list">
-          <li>Ticketbearbeitung & Analyse</li>
-          <li>Klare Rückmeldungen</li>
-          <li>Weniger Wiederholungsfehler</li>
-        </ul>
-      </div>
-      <div class="block__media">
-        <img src="assets/it-support.jpg" alt="IT-Support am Laptop" loading="lazy">
-      </div>
-    </article>
+      <article class="block block--reverse">
+        <div class="block__text">
+          <h3>Erreichbarer IT-Support</h3>
+          <p>
+            Tickets werden nicht weitergereicht, sondern gelöst –
+            nachvollziehbar und sauber dokumentiert.
+          </p>
+          <ul class="block__list">
+            <li>1st & 2nd Level Support</li>
+            <li>Analyse & Lösung</li>
+            <li>Weniger Wiederholungsfehler</li>
+          </ul>
+        </div>
+        <div class="block__media">
+          <img src="assets/it-support.jpg" alt="IT-Support am Laptop">
+        </div>
+      </article>
 
-    <article class="block">
-      <div class="block__text">
-        <h3>Prozesse, die bleiben</h3>
-        <p>Wir verbessern Abläufe so, dass es langfristig weniger Störungen gibt – nicht nur Quick-Fixes.</p>
-        <ul class="block__list">
-          <li>Ursachenanalyse</li>
-          <li>Standardisierung</li>
-          <li>Wissenstransfer</li>
-        </ul>
-      </div>
-      <div class="block__media">
-        <img src="assets/it-process.jpg" alt="Prozessoptimierung und Planung" loading="lazy">
-      </div>
-    </article>
+      <article class="block">
+        <div class="block__text">
+          <h3>Projekte mit Plan</h3>
+          <p>
+            Von Planung bis Go-Live – realistische Timelines,
+            klare Kommunikation und messbare Ergebnisse.
+          </p>
+          <ul class="block__list">
+            <li>Rollouts & Migrationen</li>
+            <li>Go-Live & Hypercare</li>
+            <li>Stakeholder-Management</li>
+          </ul>
+        </div>
+        <div class="block__media">
+          <img src="assets/it-project.jpg" alt="IT-Projektarbeit">
+        </div>
+      </article>
 
-    <article class="block block--reverse">
-      <div class="block__text">
-        <h3>Projekte mit Plan</h3>
-        <p>Von Planung bis Go-Live: realistische Timelines, klare Kommunikation, messbare Ergebnisse.</p>
-        <ul class="block__list">
-          <li>Rollouts & Cutover</li>
-          <li>Go-Live & Hypercare</li>
-          <li>Stakeholder-Management</li>
-        </ul>
-      </div>
-      <div class="block__media">
-        <img src="assets/it-project.jpg" alt="IT-Projektarbeit" loading="lazy">
-      </div>
-    </article>
+    </div>
+  </section>
 
-  </div>
-</section>
+  <!-- ================= KONTAKT ================= -->
+  <section id="kontakt" class="section">
+    <div class="container">
+      <h2>Anfrage senden</h2>
+      <p class="hero__lead">
+        Eine kurze Nachricht reicht – wir melden uns zeitnah.
+      </p>
+      <!-- Formular kannst du hier später einbauen -->
+    </div>
+  </section>
+
+  <!-- ================= JS ================= -->
+  <script src="script.js"></script>
+</body>
+</html>
+
 
 
 
