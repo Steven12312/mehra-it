@@ -243,9 +243,13 @@ a{color:inherit; text-decoration:none}
   filter:grayscale(1) contrast(1.05);
   display:block;
 }
-.portrait{
-  object-fit: cover;
-  object-position: center 35%;
+.portraitimg{
+  width:100%;
+  height:340px;
+  object-fit:cover;
+  object-position: center 35%; /* 🔥 DAS fehlt */
+  filter:grayscale(1) contrast(1.05);
+  display:block;
 }
 
 /* ===============================
