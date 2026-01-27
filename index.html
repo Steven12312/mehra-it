@@ -1,48 +1,55 @@
-<!-- HERO -->
+<!-- HERO (Start) -->
 <section id="top" class="hero hero--video">
-  <video class="hero__video" autoplay muted loop playsinline preload="metadata">
+  <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="assets/hero-bg.jpg">
     <source src="assets/hero-bg.mp4" type="video/mp4">
   </video>
   <div class="hero__overlay" aria-hidden="true"></div>
 
-  <header class="hero__topbar">
+  <!-- Topbar wie Haven (Brand links, CTA rechts) -->
+  <div class="hero__topbar">
     <a class="hero__brand" href="#top">Mehra IT-Consulting</a>
-    <a class="hero__cta" href="#kontakt">Erstgespräch</a>
-  </header>
+    <a class="hero__topcta" href="#kontakt">Anfrage senden</a>
+  </div>
 
   <div class="container hero__content">
-    <p class="hero__kicker">Komfortabel. Praktisch. Verlässlich.</p>
+    <p class="hero__kicker">IT-Services für Unternehmen</p>
     <h1>IT, die im Alltag einfach funktioniert.</h1>
     <p class="hero__lead">
-      Support, Betrieb & Projekte – strukturiert, schnell erreichbar und sauber umgesetzt.
+      Support, Betrieb & Projekte – strukturiert, schnell erreichbar und zuverlässig umgesetzt.
     </p>
+
     <div class="hero__actions">
-      <a class="btn btn--primary" href="#kontakt">Kostenloses Erstgespräch</a>
+      <a class="btn btn--primary" href="#kontakt">Anfrage senden</a>
       <a class="btn btn--ghost" href="#dienstleistungen">Leistungen ansehen</a>
+    </div>
+
+    <div class="hero__meta">
+      <span>1st/2nd Level Support</span>
+      <span>IT-Betrieb</span>
+      <span>Projektmanagement</span>
     </div>
   </div>
 </section>
 
-<!-- TEASER (wie „Erfahren Sie mehr über uns!“) -->
+<!-- Teaser (kurz, wie “Erfahren Sie mehr…”) -->
 <section class="teaser">
   <div class="container teaser__inner">
-    <p class="teaser__mini">Erfahren Sie mehr über uns!</p>
+    <p class="teaser__mini">Erfahren Sie mehr über uns</p>
     <h2>Ihr IT-Partner für Support, Betrieb und Projekte.</h2>
   </div>
 </section>
 
-<!-- FEATURE-SEKTIONEN (Haven-Style: Headline + Bildwelt) -->
+<!-- Blocks (Haven-Style: große Bildfläche + Text, abwechselnd) -->
 <section id="dienstleistungen" class="blocks">
   <div class="container">
+
     <article class="block">
       <div class="block__text">
-        <h3>Mittelpunkt: Stabiler Betrieb</h3>
-        <p>
-          Wir sorgen dafür, dass Ihre IT ruhig läuft: Standards, Dokumentation und klare Verantwortlichkeiten.
-        </p>
+        <h3>Stabiler Betrieb</h3>
+        <p>Standards, Dokumentation und klare Verantwortlichkeiten – damit es dauerhaft ruhig läuft.</p>
         <ul class="block__list">
-          <li>Saubere Übergaben & Doku</li>
-          <li>Monitoring & Routine-Checks</li>
+          <li>Übergaben & Doku</li>
+          <li>Routine-Checks</li>
           <li>Transparente Status-Updates</li>
         </ul>
       </div>
@@ -53,13 +60,11 @@
 
     <article class="block block--reverse">
       <div class="block__text">
-        <h3>Komfort: Support, der erreichbar ist</h3>
-        <p>
-          1st/2nd Level Support mit klarer Rückmeldung. Tickets werden nicht „verschoben“, sondern gelöst.
-        </p>
+        <h3>Erreichbarer Support</h3>
+        <p>Tickets werden nicht verschoben – wir analysieren, lösen und dokumentieren sauber.</p>
         <ul class="block__list">
-          <li>Ticketanalyse & Priorisierung</li>
-          <li>Nachvollziehbare Lösungen</li>
+          <li>Ticketbearbeitung & Analyse</li>
+          <li>Klare Rückmeldungen</li>
           <li>Weniger Wiederholungsfehler</li>
         </ul>
       </div>
@@ -70,10 +75,8 @@
 
     <article class="block">
       <div class="block__text">
-        <h3>Nachhaltigkeit: Prozesse, die bleiben</h3>
-        <p>
-          Wir verbessern Abläufe so, dass es langfristig weniger Störungen gibt – nicht nur kurzfristige Quick-Fixes.
-        </p>
+        <h3>Prozesse, die bleiben</h3>
+        <p>Wir verbessern Abläufe so, dass es langfristig weniger Störungen gibt – nicht nur Quick-Fixes.</p>
         <ul class="block__list">
           <li>Ursachenanalyse</li>
           <li>Standardisierung</li>
@@ -81,26 +84,25 @@
         </ul>
       </div>
       <div class="block__media">
-        <img src="assets/it-process.jpg" alt="Prozesse und Planung" loading="lazy">
+        <img src="assets/it-process.jpg" alt="Prozessoptimierung und Planung" loading="lazy">
       </div>
     </article>
 
     <article class="block block--reverse">
       <div class="block__text">
-        <h3>IT meets Business: Projekte mit Plan</h3>
-        <p>
-          Von Planung bis Go-Live: realistische Timelines, klare Kommunikation, messbare Ergebnisse.
-        </p>
+        <h3>Projekte mit Plan</h3>
+        <p>Von Planung bis Go-Live: realistische Timelines, klare Kommunikation, messbare Ergebnisse.</p>
         <ul class="block__list">
-          <li>Stakeholder-Management</li>
           <li>Rollouts & Cutover</li>
           <li>Go-Live & Hypercare</li>
+          <li>Stakeholder-Management</li>
         </ul>
       </div>
       <div class="block__media">
-        <img src="assets/it-project.jpg" alt="Projektarbeit im Team" loading="lazy">
+        <img src="assets/it-project.jpg" alt="IT-Projektarbeit" loading="lazy">
       </div>
     </article>
+
   </div>
 </section>
 
