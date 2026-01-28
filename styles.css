@@ -389,4 +389,38 @@ a{color:inherit; text-decoration:none}
   .hero__meta{gap:8px}
 }
 
+/* ===== Enterprise – zentrierter Text ===== */
+.enterprise-center{
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.enterprise-center h2{
+  margin-bottom:14px;
+}
+
+.enterprise-center__lead{
+  color: var(--muted);
+  font-size:1.05rem;
+  margin-bottom:18px;
+}
+
+.enterprise-center__list{
+  list-style:none;
+  padding:0;
+  margin:0 0 14px;
+}
+
+.enterprise-center__list li{
+  margin:6px 0;
+  font-weight:600;
+}
+
+.enterprise-center__note{
+  color: var(--muted);
+  font-size:.9rem;
+}
+
+
 
