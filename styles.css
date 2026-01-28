@@ -269,6 +269,66 @@ a{color:inherit; text-decoration:none}
   filter:grayscale(1) contrast(1.05);
   display:block;
 }
+/* ===== Timeline ===== */
+.timeline{
+  position:relative;
+  margin-top:18px;
+  padding-left:22px;
+}
+
+.timeline::before{
+  content:"";
+  position:absolute;
+  left:8px;
+  top:0;
+  bottom:0;
+  width:2px;
+  background: var(--line);
+}
+
+.timeline__item{
+  position:relative;
+  padding:14px 0 14px 18px;
+}
+
+.timeline__dot{
+  position:absolute;
+  left:0;
+  top:22px;
+  width:14px;
+  height:14px;
+  border-radius:999px;
+  background:#fff;
+  border:2px solid var(--text);
+  box-shadow: 0 6px 16px rgba(0,0,0,.12);
+}
+
+.timeline__item h3{
+  margin:0 0 6px;
+  font-size:1.05rem;
+}
+
+.timeline__item p{
+  margin:0;
+  color:var(--muted);
+}
+
+/* Optional: Card-Look pro Punkt (modern) */
+.timeline--cards .timeline__item{
+  background: rgba(255,255,255,.70);
+  border:1px solid var(--line);
+  border-radius: var(--r);
+  padding:14px 14px 14px 18px;
+  margin:12px 0;
+  box-shadow: 0 12px 26px rgba(0,0,0,.06);
+}
+
+.timeline--cards::before{
+  top:10px;
+  bottom:10px;
+}
+
+
 
 /* ===============================
    RESPONSIVE
@@ -284,4 +344,10 @@ a{color:inherit; text-decoration:none}
 @media (max-width:640px){
   .hero h1{font-size:clamp(30px,7vw,44px)}
   .hero__meta{gap:8px}
+}
+
+@media (max-width:640px){
+  .timeline{padding-left:20px}
+  .timeline__item{padding-left:16px}
+  .timeline__dot{top:20px}
 }
