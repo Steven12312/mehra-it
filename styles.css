@@ -421,6 +421,43 @@ a{color:inherit; text-decoration:none}
   color: var(--muted);
   font-size:.9rem;
 }
+/* ===============================
+   FOOTER
+================================ */
+.site-footer{
+  border-top:1px solid var(--line);
+  background:rgba(255,255,255,.03);
+  margin-top:80px;
+}
+
+.site-footer__inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:24px 20px;
+  flex-wrap:wrap;
+}
+
+.site-footer__copy{
+  margin:0;
+  font-size:.9rem;
+  color:var(--muted);
+}
+
+.site-footer__nav{
+  display:flex;
+  gap:18px;
+}
+
+.site-footer__nav a{
+  font-size:.9rem;
+  color:var(--muted);
+}
+
+.site-footer__nav a:hover{
+  color:var(--text);
+}
 
 
 
