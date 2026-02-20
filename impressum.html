@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Impressum | Mehra IT-Consulting</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, follow" />
 
   <style>
     body{
@@ -19,15 +19,37 @@
       margin: 0 auto;
       padding: 40px 20px;
     }
-    h1,h2{
-      color:#fff;
+    h1,h2,h3{ color:#fff; }
+    a{ color:#fff; text-decoration: underline; }
+    ul{ padding-left: 20px; }
+    .back{ margin-top: 40px; }
+
+    /* Footer (schlicht & passend zum Datenschutz) */
+    .site-footer{
+      border-top: 1px solid rgba(255,255,255,.12);
+      margin-top: 40px;
+      padding: 22px 0;
     }
-    a{
-      color:#fff;
-      text-decoration: underline;
+    .site-footer__inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 16px;
+      padding: 0 20px;
     }
-    .back{
-      margin-top:40px;
+    .site-footer__copy{
+      margin:0;
+      opacity:.85;
+      font-size: 14px;
+    }
+    .site-footer__nav a{
+      margin-left: 14px;
+      font-size: 14px;
+      opacity:.9;
+    }
+    @media (max-width: 640px){
+      .site-footer__inner{ flex-direction:column; align-items:flex-start; }
+      .site-footer__nav a{ margin-left:0; margin-right:14px; }
     }
   </style>
 </head>
@@ -46,38 +68,45 @@
     </p>
 
     <p>
-      Telefon: 0173 6591472<br>
-      E-Mail: Arpet_mehra@hotmail.com
+      Telefon: +49 173 6591472<br>
+      E-Mail: arpet_mehra@hotmail.com
     </p>
 
-    <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+    <h2>Verantwortlich für den Inhalt</h2>
     <p>
       Arpet Mehra<br>
       Johann-Kaiser-Straße 136<br>
       63452 Hanau<br>
       Deutschland
     </p>
-<h2>EU-Streitbeilegung</h2>
-<p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
-<a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>.<br>
-Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
+
+    <h2>Streitbeilegung (Verbraucherstreitbeilegung)</h2>
+    <p>
+      Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer
+      Verbraucherschlichtungsstelle teilzunehmen.
+    </p>
+
     <div class="back">
       <a href="index.html">← Zurück zur Startseite</a>
     </div>
   </main>
+
   <!-- ================= FOOTER ================= -->
-<footer class="site-footer">
-  <div class="container site-footer__inner">
-    <p class="site-footer__copy">
-      © <span id="year"></span> Mehra IT-Consulting
-    </p>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copy">
+        © <span id="year"></span> Mehra IT-Consulting
+      </p>
 
-    <nav class="site-footer__nav">
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-    </nav>
-  </div>
-</footer>
+      <nav class="site-footer__nav">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+  </footer>
 
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
